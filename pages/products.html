@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Industrial Equipment Corporation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="../assets/css/styles.css" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-white shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <i class="fas fa-cogs"></i> IEC
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="products.html">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="services.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="careers.html">Careers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-primary text-white px-3" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="bg-light py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h1 class="display-4 fw-bold mb-4">Our Products</h1>
+                    <p class="lead text-muted">Discover our range of industrial equipment designed for maximum efficiency and reliability.</p>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <img src="https://source.unsplash.com/800x600/?industrial,factory" alt="Industrial Equipment" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="btn-group filter-buttons" role="group" data-aos="fade-up">
+                        <button type="button" class="btn btn-outline-primary active filter-btn" data-filter="all">All Products</button>
+                        <button type="button" class="btn btn-outline-primary filter-btn" data-filter="machinery">Machinery</button>
+                        <button type="button" class="btn btn-outline-primary filter-btn" data-filter="tools">Tools</button>
+                        <button type="button" class="btn btn-outline-primary filter-btn" data-filter="automation">Automation</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4" id="productGrid">
+                <!-- Product cards will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-light py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="mb-4" data-aos="fade-up">Need Custom Solutions?</h2>
+                    <p class="lead mb-4" data-aos="fade-up" data-aos-delay="100">We offer customized industrial equipment tailored to your specific needs.</p>
+                    <a href="contact.html" class="btn btn-primary btn-lg" data-aos="fade-up" data-aos-delay="200">Request Custom Quote</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5" data-aos="fade-up">Product Categories</h2>
+            <div class="row g-4">
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="https://source.unsplash.com/800x600/?machinery" class="card-img-top" alt="Industrial Machinery">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Industrial Machinery</h3>
+                            <p class="text-muted">High-performance machinery for manufacturing and production.</p>
+                            <a href="#" class="btn btn-outline-primary">View Machinery</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="https://source.unsplash.com/800x600/?tools" class="card-img-top" alt="Industrial Tools">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Industrial Tools</h3>
+                            <p class="text-muted">Professional-grade tools for industrial applications.</p>
+                            <a href="#" class="btn btn-outline-primary">View Tools</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card border-0 shadow-sm h-100">
+                        <img src="https://source.unsplash.com/800x600/?automation" class="card-img-top" alt="Automation Systems">
+                        <div class="card-body">
+                            <h3 class="h5 mb-3">Automation Systems</h3>
+                            <p class="text-muted">Advanced automation solutions for improved efficiency.</p>
+                            <a href="#" class="btn btn-outline-primary">View Systems</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4">
+                    <h5 class="mb-3">Industrial Equipment Corporation</h5>
+                    <p class="mb-0">Leading provider of industrial solutions since 1990</p>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-3">Quick Links</h5>
+                    <ul class="list-unstyled mb-0">
+                        <li><a href="about.html" class="text-white-50">About Us</a></li>
+                        <li><a href="products.html" class="text-white-50">Products</a></li>
+                        <li><a href="services.html" class="text-white-50">Services</a></li>
+                        <li><a href="contact.html" class="text-white-50">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5 class="mb-3">Contact Us</h5>
+                    <p class="mb-0">
+                        <i class="fas fa-envelope me-2"></i> info@iec.com<br>
+                        <i class="fas fa-phone me-2"></i> (555) 123-4567<br>
+                        <i class="fas fa-map-marker-alt me-2"></i> 123 Industrial Ave, Business District
+                    </p>
+                </div>
+            </div>
+            <hr class="my-4">
+            <div class="text-center text-white-50">
+                <small>&copy; 2024 Industrial Equipment Corporation. All rights reserved.</small>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script>
+        // Additional product-specific JavaScript
+        const productData = [
+            {
+                name: "Industrial Drill Press",
+                category: "machinery",
+                image: "https://source.unsplash.com/800x600/?drill,machine",
+                description: "Heavy-duty drill press for industrial applications"
+            },
+            {
+                name: "Hydraulic Press",
+                category: "machinery",
+                image: "https://source.unsplash.com/800x600/?hydraulic,machine",
+                description: "High-capacity hydraulic press system"
+            },
+            {
+                name: "Power Tools Set",
+                category: "tools",
+                image: "https://source.unsplash.com/800x600/?tools,power",
+                description: "Professional-grade power tools set"
+            },
+            {
+                name: "Automation Controller",
+                category: "automation",
+                image: "https://source.unsplash.com/800x600/?automation,control",
+                description: "Smart automation control system"
+            },
+            {
+                name: "CNC Machine",
+                category: "machinery",
+                image: "https://source.unsplash.com/800x600/?cnc,machine",
+                description: "Precision CNC machining center"
+            },
+            {
+                name: "Robotic Arm",
+                category: "automation",
+                image: "https://source.unsplash.com/800x600/?robot,arm",
+                description: "Industrial robotic arm for automation"
+            }
+        ];
+
+        const productGrid = document.getElementById('productGrid');
+        productData.forEach(product => {
+            const productHTML = `
+                <div class="col-md-4" data-aos="fade-up">
+                    <div class="card product-card h-100" data-category="${product.category}">
+                        <img src="${product.image}" class="card-img-top" alt="${product.name}">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">${product.name}</h5>
+                            <p class="card-text">${product.description}</p>
+                            <div class="mt-auto">
+                                <a href="#" class="btn btn-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            `;
+            productGrid.innerHTML += productHTML;
+        });
+    </script>
+</body>
+</html>
